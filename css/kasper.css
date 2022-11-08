@@ -95,7 +95,7 @@ ul {
   transform: translateX(-50%);
 }
 
-.main-heading h2+p {
+.main-heading h2 + p {
   width: 530px;
   color: #777;
   line-height: 2;
@@ -163,7 +163,7 @@ header nav ul {
     display: none;
   }
 
-  header nav .toggle-menue:hover+ul {
+  header nav .toggle-menue:hover + ul {
     display: flex;
     position: absolute;
     top: 100%;
@@ -331,7 +331,8 @@ header nav .form i {
   padding-bottom: var(--main-padding);
 }
 
-.services .service-container {}
+.services .service-container {
+}
 
 .services .service-box {
   display: flex;
@@ -603,6 +604,7 @@ header nav .form i {
   position: relative;
   bottom: -120px;
   margin-top: -120px;
+  max-width: 100%;
 }
 
 @media (max-width: 767px) {
@@ -618,7 +620,7 @@ header nav .form i {
     position: relative;
   }
 
-  .main-heading h2+p {
+  .main-heading h2 + p {
     width: 530px;
     color: #777;
     line-height: 2;
@@ -721,33 +723,30 @@ header nav .form i {
   flex-wrap: wrap;
 }
 
-@media (min-width:992px) {
-  .our-skills .container>div {
+@media (min-width: 992px) {
+  .our-skills .container > div {
     flex-basis: 45%;
   }
 }
 
-.our-skills .container>div>h2 {
+.our-skills .container > div > h2 {
   margin: 0 0 30px;
   text-transform: capitalize;
   font-weight: normal;
   text-align: center;
-
 }
 
-.our-skills .container>div>p {
+.our-skills .container > div > p {
   color: #777;
   line-height: 1.8;
   margin: 0 0 40px;
   text-align: center;
-
 }
 
 .our-skills .testimonial .box {
   display: flex;
   margin-bottom: 50px;
   align-items: center;
-
 }
 
 .our-skills .testimonial .box img {
@@ -758,7 +757,7 @@ header nav .form i {
   max-width: 100%;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .our-skills .testimonial .box {
     flex-direction: column;
     text-align: center;
@@ -793,23 +792,17 @@ header nav .form i {
   border: 2px solid #777;
   margin-left: 3px;
   border-radius: 50%;
-
-
-
 }
 
 .our-skills .testimonial .bullet li.active {
-
   background-color: #2ac1f4;
 }
 
 .our-skills .prog-holder {
-
   margin-bottom: 40px;
-
 }
 
-.our-skills .prog-holder>h4 {
+.our-skills .prog-holder > h4 {
   text-transform: uppercase;
   margin-bottom: 15px;
   font-weight: normal;
@@ -819,11 +812,9 @@ header nav .form i {
   height: 30px;
   background-color: #dedadc;
   width: 100%;
-
 }
 
 .our-skills .prog-holder .prog span {
-
   background-color: var(--main-color);
   height: 100%;
   position: relative;
@@ -873,7 +864,6 @@ header nav .form i {
 
 .quote .container {
   position: relative;
-
 }
 
 .quote .container q {
@@ -881,7 +871,6 @@ header nav .form i {
   line-height: 1.8;
   margin: 0 0 10px;
   display: block;
-
 }
 
 .quote .container span {
@@ -893,7 +882,8 @@ header nav .form i {
   padding-bottom: var(--main-padding);
 }
 
-.pricing .container {}
+.pricing .container {
+}
 
 .pricing .plans {
   display: grid;
@@ -912,7 +902,7 @@ header nav .form i {
   border-bottom: 1px solid var(--transparent-color);
 }
 
-.pricing .plans .plan .header>h3 {
+.pricing .plans .plan .header > h3 {
   margin-bottom: 25px;
 }
 
@@ -937,7 +927,6 @@ header nav .form i {
   position: relative;
   left: 14px;
   font-weight: normal;
-
 }
 
 .pricing .plans .plan ul {
@@ -946,10 +935,8 @@ header nav .form i {
 }
 
 .pricing .plans .plan ul li {
-
   padding: 15px;
   position: relative;
-
 }
 
 .pricing .plans .plan ul li:not(:last-child)::after {
@@ -960,15 +947,13 @@ header nav .form i {
   bottom: 0%;
   left: 50%;
   transform: translatex(-50px);
-
-
 }
 
 .pricing .plans .plan .footer {
   text-align: center;
 }
 
-.pricing .plans .plan .footer>a {
+.pricing .plans .plan .footer > a {
   padding: 10px 20px;
   text-transform: uppercase;
   text-align: center;
@@ -978,7 +963,6 @@ header nav .form i {
   border: 1px solid var(--main-color);
   width: fit-content;
   color: black;
-
 }
 
 .pricing .contact-text {
@@ -1015,7 +999,7 @@ header nav .form i {
   align-items: center;
 }
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
   .subscrib .container {
     flex-direction: column;
   }
@@ -1029,7 +1013,6 @@ header nav .form i {
   position: absolute;
   background-color: rgb(0 0 0/70%);
 }
-
 
 .subscrib form {
   display: flex;
@@ -1057,7 +1040,6 @@ header nav .form i {
   width: calc(100% - 130px);
   border-right: none;
   padding: 20px 20px 20px 60px;
-
 }
 
 .subscrib form ::placeholder {
@@ -1079,7 +1061,7 @@ header nav .form i {
   margin-left: 50px;
 }
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
   .subscrib p {
     margin: 30px auto 0;
   }
@@ -1087,14 +1069,14 @@ header nav .form i {
 
 /* end subscrib */
 
-
 /* Start CONTACT  */
 .contact {
   padding-top: var(--main-padding);
   padding-bottom: var(--main-padding);
 }
 
-.contact .container {}
+.contact .container {
+}
 
 .contact .container .content {
   display: flex;
@@ -1105,7 +1087,7 @@ header nav .form i {
   flex-basis: 70%;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .contact .container .content {
     flex-direction: column;
   }
@@ -1127,8 +1109,6 @@ header nav .form i {
   height: 200px;
 }
 
-
-
 .contact .container .content form input[type="submit"] {
   color: white;
   background-color: #2ac1f4;
@@ -1139,14 +1119,13 @@ header nav .form i {
   margin-left: auto;
   cursor: pointer;
   text-transform: capitalize;
-
 }
 
 .contact .container .content .info {
   flex-basis: 25%;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .contact .container .content .info {
     text-align: center;
     order: -1;
@@ -1156,18 +1135,15 @@ header nav .form i {
 .contact .container .content .info h4 {
   text-transform: capitalize;
   margin-bottom: 35px;
-
-
 }
 
 .contact .container .content .info span.phone {
-
   display: block;
   color: #ccc;
   font-weight: normal;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .contact .container .content .info h4:nth-of-type(2) {
     margin-top: 15px;
   }
@@ -1177,8 +1153,6 @@ header nav .form i {
   margin-top: 95px;
   text-transform: capitalize;
   margin-bottom: 49px;
-
-
 }
 
 .contact .container .content .info address {
@@ -1186,19 +1160,17 @@ header nav .form i {
   line-height: 1.8;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .contact .container .content .info address {
     margin-bottom: 31px;
-
   }
 }
-
 
 /* End  CONTACT  */
 /* start  footer  */
 .footer {
-  padding-top: calc(var(--main-padding)/2);
-  padding-bottom: calc(var(--main-padding)/2);
+  padding-top: calc(var(--main-padding) / 2);
+  padding-bottom: calc(var(--main-padding) / 2);
   color: white;
   text-align: center;
   background-image: url(../images/subscribe.jpg);
@@ -1218,7 +1190,6 @@ header nav .form i {
 
 .footer .container {
   position: relative;
-
 }
 
 .footer .container img {
@@ -1232,7 +1203,6 @@ header nav .form i {
   font-weight: bold;
   font-size: 25px;
   position: relative;
-
 }
 
 .footer .container p:first-of-type::after {
@@ -1247,16 +1217,14 @@ header nav .form i {
   margin-top: 10px;
 }
 
-.footer .container .social-icon {}
+.footer .container .social-icon {
+}
 
 .footer .container .social-icon i {
   /* margin-left: 16px; */
   padding: 15px;
   cursor: pointer;
-
 }
-
-
 
 .footer .container p:last-of-type {
   margin-top: 50px;
